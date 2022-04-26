@@ -68,20 +68,31 @@ div i{
     border: none;
 }
 .contacts{
-    height: 70px;
+    height: 450px;
     background-color: white;
+    overflow: auto;
+}
+.user-contacts{
+    height: 70px; 
 }
 .messages{
     height: 490px;
     background-color: #e5ddd5;
+    overflow: auto;
 }
 .sent{
     background-color: #d5f9ba;
     display: inline-block;
+    margin: 5px 0;
+    border-radius: 8px;
+    padding: 5px 10px;
 }
 .received{
     background-color: white;
     display: inline-block;
+    margin: 5px 0;
+    border-radius: 8px;
+    padding: 5px 10px;
 }
 .comunicate{
     height: 50px;
