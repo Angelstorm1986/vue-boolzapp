@@ -1,3 +1,89 @@
+/* colori:
+testa: #009688;
+icone: #b1b1b1;
+notifiche: #8edafc;
+sfondo esterno: #d9dbd5;
+sfondo interno: #e5ddd5;
+sfondo selezione: #e9ebeb;
+testa utente: #eaeaea;*/
+
+/* General */
+.debug{
+    border: 1px solid black;
+}
+
 body{
-    background-color: red;
+    height: 100vh;
+}
+.head{
+    height: 10vh;
+    background-color: #009688;
+}
+.ext{
+    height: 90vh;
+    background-color: #d9dbd5;
+    position: relative;
+}
+.wrapper{
+    position: absolute;
+    height: 600px;
+    width: 80%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: -25px;
+}
+.user, .chat{
+    height: 60px;
+    background-color: #eaeaea;
+}
+div i{
+    padding: 0 5px;
+    color: #b1b1b1;
+}
+.user-options .fa-ellipsis-vertical{
+    transform: rotate(90deg);
+}
+.notify{
+    height: 50px;
+    background-color: #8edafc;
+}
+.fa-bell-slash{
+    padding: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+    color: #8edafc;
+    background-color: white;
+}
+.search{
+    background-color: #d9dbd5;
+    height: 40px;
+    padding: 5px;
+}
+.search .fa-magnifying-glass{
+    background-color: white;
+    padding: 5px 5px;
+}
+.search input{
+    border: none;
+}
+.contacts{
+    height: 70px;
+    background-color: white;
+}
+.messages{
+    height: 490px;
+    background-color: #e5ddd5;
+}
+.sent{
+    background-color: #d5f9ba;
+    display: inline-block;
+}
+.received{
+    background-color: white;
+    display: inline-block;
+}
+.comunicate{
+    height: 50px;
+    background-color: #f3eeea;
 }
