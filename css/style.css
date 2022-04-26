@@ -11,7 +11,6 @@ testa utente: #eaeaea;*/
 .debug{
     border: 1px solid black;
 }
-
 body{
     height: 100vh;
 }
@@ -82,14 +81,12 @@ div i{
 }
 .sent{
     background-color: #d5f9ba;
-    display: inline-block;
     margin: 5px 0;
     border-radius: 8px;
     padding: 5px 10px;
 }
 .received{
     background-color: white;
-    display: inline-block;
     margin: 5px 0;
     border-radius: 8px;
     padding: 5px 10px;
@@ -97,4 +94,14 @@ div i{
 .comunicate{
     height: 50px;
     background-color: #f3eeea;
+}
+.com-write{
+    width: 80%;
+}
+.com-write input{
+    width: 100%;
+}
+.fa-face-smile,
+.fa-microphone{
+    margin: 0 10px;
 }
