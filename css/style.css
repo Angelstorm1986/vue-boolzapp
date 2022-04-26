@@ -97,12 +97,14 @@ li{
     margin: 5px 0;
     border-radius: 8px;
     padding: 5px 10px;
+    clear: both;
 }
 .received{
     background-color: white;
     margin: 5px 0;
     border-radius: 8px;
     padding: 5px 10px;
+    clear: both;
 }
 .comunicate{
     height: 50px;
