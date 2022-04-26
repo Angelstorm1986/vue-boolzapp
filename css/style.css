@@ -91,7 +91,6 @@ li{
     height: 490px;
     background-color: #e5ddd5;
     background-image: url(../img/mine.jpg);
-    background-repeat: repeat;
     overflow: auto;
 }
 .sent{
