@@ -13,13 +13,13 @@
 <body>
     <div class="head"></div>
     <div class="ext">
-        <div class="wrapper">
+        <div id="app" class="wrapper">
             <div class="row">
                 <div class="col-4 px-0">
                     <div class="user d-flex justify-content-between align-items-center">
-                        <div class="user-data d-flex">
-                            <img src="" alt="" class="rounded-pill">
-                            <p><strong>Sofia</strong></p>
+                        <div class="user-data d-flex justify-content-center align-items-center">
+                            <img :src="'img/' + user.avatar" width="40" height="40" :alt="user.name" class="rounded-pill">
+                            <span><strong>{{user.name}}</strong></span>
                         </div>
                         <div class="user-options">
                             <i class="fa-solid fa-circle-notch"></i>
@@ -30,7 +30,7 @@
                     <div class="notify d-flex align-items-center">
                         <i class="fa-solid fa-bell-slash"></i>
                         <div class="notify-text">
-                            <span><strong>Ricevi notifiche di nuovi messaggi</strong></span>
+                            <span><strong>Ricevi notifiche di nuovi messaggi</strong></span><br>
                             <a href="#">Attiva notifiche desktop</a>
                         </div>
                     </div>
@@ -40,66 +40,10 @@
                     </div>
                     <div class="contacts">
                         <ul>
-                            <li class="user-contacts d-flex justify-content-between align-items-center">
-                                <div class="contacts-data">
-                                    <img src="" alt="" class="rounded-pill">
-                                    <p><strong>Michele</strong> </p>
-                                </div>
-                                <div class="contacts-time">
-                                </div>
-                            </li>
-                            <li class="user-contacts d-flex justify-content-between align-items-center">
-                                <div class="contacts-data">
-                                    <img src="" alt="" class="rounded-pill">
-                                    <p><strong>Michele</strong> </p>
-                                </div>
-                                <div class="contacts-time">
-                                </div>
-                            </li>
-                            <li class="user-contacts d-flex justify-content-between align-items-center">
-                                <div class="contacts-data">
-                                    <img src="" alt="" class="rounded-pill">
-                                    <p><strong>Michele</strong> </p>
-                                </div>
-                                <div class="contacts-time">
-                                </div>
-                            </li>
-                            <li class="user-contacts d-flex justify-content-between align-items-center">
-                                <div class="contacts-data">
-                                    <img src="" alt="" class="rounded-pill">
-                                    <p><strong>Michele</strong> </p>
-                                </div>
-                                <div class="contacts-time">
-                                </div>
-                            </li>
-                            <li class="user-contacts d-flex justify-content-between align-items-center">
-                                <div class="contacts-data">
-                                    <img src="" alt="" class="rounded-pill">
-                                    <p><strong>Michele</strong> </p>
-                                </div>
-                                <div class="contacts-time">
-                                </div>
-                            </li>
-                            <li class="user-contacts d-flex justify-content-between align-items-center">
-                                <div class="contacts-data">
-                                    <img src="" alt="" class="rounded-pill">
-                                    <p><strong>Michele</strong> </p>
-                                </div>
-                                <div class="contacts-time">
-                                </div>
-                            </li>
-                            <li class="user-contacts d-flex justify-content-between align-items-center">
-                                <div class="contacts-data">
-                                    <img src="" alt="" class="rounded-pill">
-                                    <p><strong>Michele</strong> </p>
-                                </div>
-                                <div class="contacts-time">
-                                </div>
-                            </li>
-                            <li class="user-contacts d-flex justify-content-between align-items-center">
-                                <div class="contacts-data">
-                                    <img src="" alt="" class="rounded-pill">
-                                    <p><strong>Michele</strong> </p>
+                            <li class="user-contacts d-flex justify-content-between align-items-center" v-for="(amici, index) in contacts">
+                                <div class="contacts-data d-flex justify-content-center align-items-center">
+                                    <img :src="'img/' + amici.avatar" width="40" height="40" alt="amici.name" class="rounded-pill">
+                                    <span><strong>{{amici.name}}</strong></span>
                                 </div>
                                 <div class="contacts-time">
                                 </div>

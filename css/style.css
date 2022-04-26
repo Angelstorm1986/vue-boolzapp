@@ -36,6 +36,16 @@ body{
     height: 60px;
     background-color: #eaeaea;
 }
+.user-data, 
+.user-data span,
+.user-contacts span,
+.notify-text span,
+.notify-text a{
+    padding-left: 10px;
+}
+.user-options{
+    padding-right: 10px;
+}
 div i{
     padding: 0 5px;
     color: #b1b1b1;
@@ -70,6 +80,9 @@ div i{
     height: 450px;
     background-color: white;
     overflow: auto;
+}
+li{
+    list-style-type: none;
 }
 .user-contacts{
     height: 70px; 
