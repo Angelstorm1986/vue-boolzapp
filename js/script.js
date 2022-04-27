@@ -170,21 +170,30 @@ const app = new Vue({
             }
         ],
         activeIndex: 0,
-        newDate: '',
         newMessage: '',
-        newStatus: ''
     },
     methods: {
         showSms(index) {
             this.activeIndex = index;
         },
         addSms() {
+            if (this.newMessage === '') return;
             const messaggio = {
-                date: this.newDate,
+                date: dayjs().format('DD/MM/YYYY hh:mm:ss'),
                 message: this.newMessage,
-                status: this.newStatus,
+                status: 'sent'
+            };
+            const risposta = {
+                date: dayjs().format('DD/MM/YYYY hh:mm:ss'),
+                message: 'Ok!!!',
+                status: 'received'
             }
-            this.contacts.messages.push(messaggio);
-        }
+            this.contacts[this.activeIndex].messages.push(messaggio);
+            this.newMessage = '';
+            setTimeout(() => {
+                this.contacts[this.activeIndex].messages.push(risposta);
+            }, 1000);
+        },
+        
     }
 });

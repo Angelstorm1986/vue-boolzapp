@@ -103,11 +103,31 @@ li{
     padding: 5px 10px;
     clear: both;
 }
+.sent span{
+    float: left;
+    clear: both;
+}
+.sent p{
+    float: right;
+    color: #bdccbb;
+    font-size: 10px;
+    clear: both;
+}
 .received{
     background-color: white;
     margin: 5px 0;
     border-radius: 8px;
     padding: 5px 10px;
+    clear: both;
+}
+.received span{
+    float: left;
+    clear: both;
+}
+.received p{
+    float: right;
+    color: #bdccbb;
+    font-size: 10px;
     clear: both;
 }
 .comunicate{
