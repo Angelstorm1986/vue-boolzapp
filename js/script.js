@@ -201,5 +201,8 @@ const app = new Vue({
                 return nomi.name.includes(this.filtroNomi);
             })
         },
+    },
+    mounted() {
+        this.filtro()
     }
 });
