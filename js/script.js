@@ -171,6 +171,8 @@ const app = new Vue({
         ],
         activeIndex: 0,
         newMessage: '',
+        filtroNomi: '',
+        nomiFiltrati: []
     },
     methods: {
         showSms(index) {
@@ -194,6 +196,10 @@ const app = new Vue({
                 this.contacts[this.activeIndex].messages.push(risposta);
             }, 1000);
         },
-        
+        filtro() {
+            this.nomiFiltrati = this.contacts.filter((nomi) => {
+                return nomi.name.includes(this.filtroNomi);
+            })
+        },
     }
 });
