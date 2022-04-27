@@ -168,9 +168,23 @@ const app = new Vue({
                     }
                 ],
             }
-        ]
+        ],
+        activeIndex: 0,
+        newDate: '',
+        newMessage: '',
+        newStatus: ''
     },
     methods: {
-
+        showSms(index) {
+            this.activeIndex = index;
+        },
+        addSms() {
+            const messaggio = {
+                date: this.newDate,
+                message: this.newMessage,
+                status: this.newStatus,
+            }
+            this.contacts.messages.push(messaggio);
+        }
     }
 });

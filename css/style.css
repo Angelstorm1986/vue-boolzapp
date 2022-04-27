@@ -87,6 +87,9 @@ li{
 .user-contacts{
     height: 70px; 
 }
+.user-contacts.active {
+    background-color: #e9ebeb;
+}
 .messages{
     height: 490px;
     background-color: #e5ddd5;
