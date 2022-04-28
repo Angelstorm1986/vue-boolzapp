@@ -39,6 +39,7 @@ body{
 .user-data, 
 .user-data span,
 .user-contacts span,
+.user-contacts p,
 .notify-text span,
 .notify-text a{
     padding-left: 10px;
@@ -89,6 +90,15 @@ li{
 }
 .contacts-data{
     height: 70px; 
+}
+.contacts-data p{
+    font-size: 10px;
+    color: #c5cbd3;
+}
+.hour{
+    font-size: 10px;
+    color: #c5cbd3;
+    clear: both;
 }
 .messages{
     height: 490px;
