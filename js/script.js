@@ -204,5 +204,8 @@ const app = new Vue({
                 }
             })
         },
+        rimuovi(i) {
+            this.contacts[this.activeIndex].messages.splice(i, 1);
+        }
     }
 });
