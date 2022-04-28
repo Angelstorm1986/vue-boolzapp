@@ -37,16 +37,16 @@
                     </div>
                     <div class="search d-flex align-items-center">
                         <i class="fa-solid fa-magnifying-glass"></i>
-                        <input type="text" class="flex-fill" placeholder="Search" v-model="filtroNomi" @keyup.enter="filtro()">
+                        <input type="text" class="flex-fill" placeholder="Search" v-model="filtroNomi" @keyup.enter="filtro">
                     </div>
                     <div class="contacts">
                         <ul>
-                            <li class="user-contacts d-flex justify-content-between align-items-center" :class="{'active' : activeIndex === index}" @click="showSms(index)" v-for="(amici, index) in contacts">
-                                <div class="contacts-data d-flex justify-content-center align-items-center">
+                            <li class="user-contacts d-flex justify-content-between align-items-center" :class="{'active' : activeIndex === index && amici.visible === true}" @click="showSms(index)" v-for="(amici, index) in contacts">
+                                <div v-if="amici.visible" class="contacts-data d-flex justify-content-center align-items-center">
                                     <img :src="'img/' + amici.avatar" width="40" height="40" :alt="amici.name" class="rounded-pill">
                                     <span><strong>{{amici.name}}</strong></span>
                                 </div>
-                                <div class="contacts-time">
+                                <div v-if="amici.visible" class="contacts-time">
                                 </div>
                             </li>
                         </ul>

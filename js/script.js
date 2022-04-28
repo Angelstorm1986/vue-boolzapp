@@ -172,7 +172,6 @@ const app = new Vue({
         activeIndex: 0,
         newMessage: '',
         filtroNomi: '',
-        nomiFiltrati: []
     },
     methods: {
         showSms(index) {
@@ -197,12 +196,13 @@ const app = new Vue({
             }, 1000);
         },
         filtro() {
-            this.nomiFiltrati = this.contacts.filter((nomi) => {
-                return nomi.name.includes(this.filtroNomi);
+            this.contacts.forEach((nomi) => {
+                if(nomi.name.toLowerCase().includes(this.filtroNomi.toLowerCase())){
+                    nomi.visible = true;
+                } else {
+                    nomi.visible = false;
+                }
             })
         },
-    },
-    mounted() {
-        this.filtro()
     }
 });
