@@ -84,11 +84,11 @@ div i{
 li{
     list-style-type: none;
 }
-.user-contacts{
-    height: 70px; 
-}
 .user-contacts.active {
     background-color: #e9ebeb;
+}
+.contacts-data{
+    height: 70px; 
 }
 .messages{
     height: 490px;
