@@ -69,8 +69,8 @@
                     <div class="messages p-5">
                         <div v-for="(messaggi, index) in contacts[activeIndex].messages" :class="messaggi.status === 'sent' ? 'sent float-end' : 'received float-start'">
                             <div class="dropdown float-end">
-                                <i class="fa-solid fa-angle-down" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"></i>
-                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <i class="fa-solid fa-angle-down" id="dropdownMenuArrow" data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuArrow">
                                   <li><a @click="rimuovi(index)" class="dropdown-item" href="#">Cancella messaggio</a></li>
                                 </ul>
                               </div>
